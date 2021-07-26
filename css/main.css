@@ -1,0 +1,65 @@
+body {
+  background: #806844;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: yellow;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100vh;
+  margin-top: -145px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  padding: 1em 0;
+  color: #ffeed4;
+}
+
+.middle {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50vh;
+  width: 50vw;
+  background: #cca66c;
+}
+
+.monkey {
+  font-size: 8rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.monkey:hover {
+  transform: rotate(15deg);
+}
+
+.bubble {
+  position: absolute;
+  display: none;
+  margin-top: -7rem;
+  margin-left: -4rem;
+  border-radius: 100%;
+  padding: 1rem;
+  background: white;
+}
+
+.monkey:hover + .bubble {
+  display: block;
+  z-index: 3;
+}
